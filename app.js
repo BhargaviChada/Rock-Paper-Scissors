@@ -24,7 +24,7 @@ const playImg=document.querySelector('.playerImg');
 const userScoreBoard=Array.from(document.querySelectorAll('.userScore'));
 const compScoreBoard=Array.from(document.querySelectorAll('.compScore'));
 
-const output=document.querySelector('.choose');
+const output=document.querySelectorAll('.choose');
 
 function loadEventListeners(){
   rockBtn.addEventListener('click',start);
@@ -132,11 +132,17 @@ function findWinner(user,comp){
     }
   }
   if(win==0){
-    output.innerHTML=`<h2 class="choose">It's a Draw!</h2>`;
+    output.forEach((result)=>{
+      result.innerHTML=`<h2 class="choose">It's a Draw!</h2>`;
+    });
   }else if(win==1){
-    output.innerHTML=`<h2 class="choose">Computer won</h2>`;
+    output.forEach((result)=>{
+      result.innerHTML=`<h2 class="choose">Computer won</h2>`;
+    });
   }else if(win==2){
-    output.innerHTML=`<h2 class="choose">You won</h2>`;
+    output.forEach((result)=>{
+      result.innerHTML=`<h2 class="choose">You won</h2>`;
+    });
   }
   return win;
 }
