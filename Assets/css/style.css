@@ -211,6 +211,7 @@ h1{
 }
 
 @media(max-width:767px){
+
   header h1{
     font-size: 1.8rem;
     margin: 1rem;
@@ -219,5 +220,73 @@ h1{
 
   .play-btn{
    padding: 0.5rem;
+  }
+
+  .main-container{
+    width: 100vw;
+  }
+
+  .play-container{
+    width:90vw;
+  }
+
+  .main{
+    justify-content: center;
+    height: 40vh;
+  }
+
+  .computer,.player{
+   justify-content: space-evenly;
+  }
+
+  .computer img,.player img{
+    width: 120px;
+    height: 120px;
+    object-fit:cover ;
+  }
+
+  .computer h2,.player h2{
+    font-size: 1.3rem;
+  }
+   
+  .btns{
+    justify-content: space-between;
+    width: 90%;
+    padding:0px;
+    margin:10px;
+  }
+
+  .play-btn{
+    margin:0 10px;
+  }
+  .result{
+    display: none;
+  }
+  .exit a{
+   height: 5vh;
+   padding:0.2rem;
+   width:60px;
+  }
+  .end-container{
+    margin:0px 10px;
+    justify-content: space-evenly;
+  }
+
+  .end-container h2{
+     font-size: 1.4rem;
+  }
+  .score-title{
+    margin-bottom: 0px;
+  }
+
+  #score{
+    font-size: 2rem !important;
+  }
+  .playagain-btn{
+    font-size: 0.8rem;
+    display: flex;
+    align-self: space-between;
+    padding: 0.7rem;
+    width:40%;
   }
 }
