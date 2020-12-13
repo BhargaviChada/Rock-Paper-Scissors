@@ -104,6 +104,9 @@ h1{
   display: flex;
   align-items: center;
 }
+.result-mobile{
+  display: none;
+}
 .result h2,.computer h2,.player h2{
   font-size: 1.8rem;
   font-weight: normal;
@@ -255,12 +258,17 @@ h1{
     padding:0px;
     margin:10px;
   }
-
   .play-btn{
     margin:0 10px;
   }
-  .result{
+  .result {
     display: none;
+  }
+  .result-mobile{
+    display: flex;
+  }
+  .result-mobile,.choose{
+    font-size: 1.4rem;
   }
   .exit a{
    height: 5vh;
